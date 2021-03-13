@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myback"
+    tools:context=".MainActivity"
+
+
+    >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/headTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="7dp"
+        android:textSize="35sp"
+
+        android:textStyle="italic"
+    android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/but"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headTag"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="18dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvLongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="abc:abc"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:padding="5dp"
+
+            />
+        <TextView
+            android:id="@+id/tvLats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="abc:abc"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvAccur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="abc:abc"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvadress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="abc:abc"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/clicked"
+            android:onClick="speakText"
+
+
+            app:srcCompat="@drawable/ic_speaker_phone_black_24dp" />
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="go To map"
+        android:layout_margin="50dp"
+android:textColor="@color/white"
+
+        android:onClick="move"
+
+        android:background="@drawable/clicked"
+
+
+        android:visibility="invisible"
+        />
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+
+        android:foregroundGravity="center"
+        android:progressBackgroundTint="#D69118"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

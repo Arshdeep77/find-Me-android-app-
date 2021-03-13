@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#131313</item>
+        <item name="colorPrimaryDark">#0C0C0C</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:drawable">@drawable/ic_keyboard_backspace_black_24dp</item>
+    </style>
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0E0E0E</item>
+        <item name="colorPrimaryDark">#0C0C0C</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<style name="myStyle" parent="Widget.AppCompat.Button">
+
+    <item name="background">@drawable/clicked</item>
+
+
+</style>
+
+
+</resources>
